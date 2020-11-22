@@ -1,0 +1,67 @@
+footer{
+    font-family: $headerNav;
+  
+    .footer-top{
+      margin: 100px 0 10px 0;
+  
+      .wrapper{
+        @include wrapper;
+        display: flex;
+  
+        .footer-left{
+          color: $footerTextColor;
+  
+          .footer-logo{
+            width: 400px;
+          }
+  
+          .info-molisana{
+            margin-top: 30px;
+  
+            p{
+              font-size: 20px;
+              font-weight: lighter;
+              margin: 5px 0;
+            }
+          }
+        }
+  
+        .footer-right{
+          display: flex;
+          flex-wrap: wrap;
+  
+          .box{
+            margin: 0 150px;
+  
+            h2{
+              color: $footerTitleColor;
+              font-size: 30px;
+            }
+  
+            .pastificio-list,
+            .collezione-list,
+            .prodotti-list{
+              list-style: none;
+  
+              li{
+                margin: 20px 0;
+                a{
+                  text-decoration: none;
+                  color: $footerTextColor;
+                  font-size: 20px;
+                  font-weight: lighter;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .footer-bottom{
+      height: 200px;
+      background-image: url("../img/footer-montagne-bottom.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }

@@ -1,0 +1,86 @@
+//HOMEPAGE-MAIN
+.home-main{
+    background-image: url("../img/fondo-pag-speciali.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .wrapper{
+      @include wrapper;
+  
+      h2{
+        padding: 20px;
+        font-family: $headerNav;
+        color: $mainColor;
+        font-size: 35px;
+      }
+  
+      .main-list{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+  
+        .layover{
+          position: relative;
+          width: calc(100% - 40px);
+          height: calc(100% - 44px);
+          max-width: calc(100% - 40px);
+          max-height: calc(100% - 44px);
+  
+          .layover-icon{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+          }
+  
+          &:hover .layover-icon{
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+  
+            &:hover h3, .icona{
+              display: block;
+            }
+          }
+        }
+  
+        h3{
+          font-family: $headerNav;
+          font-size: 25px;
+          font-weight: lighter;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: none;
+        }
+        .icona{
+          width: 30px;
+          display: none;
+          position: absolute;
+          bottom: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+  
+        & .img-prodotto{
+          width: 500px;
+          margin: 20px;
+          transition: all 1s ease;
+        }
+  
+        .layover:hover .img-prodotto{
+          width: 520px;
+        }
+  
+        h3{
+  
+          a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }

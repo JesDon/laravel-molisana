@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  header .logo-molisana {
+    width: 300px;
+    margin: 50px;
+  }
+  header nav .header-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  header nav .header-nav-list li {
+    margin-bottom: 30px;
+  }
+  header nav .header-nav-list li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 30px;
+  }
+  header nav .header-nav-list li a.active {
+    background-color: #b3e5fc;
+  }
+  
+  .home-main {
+    background-image: url("../img/fondo-pag-speciali.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home-main .wrapper {
+    width: 1700px;
+    height: 100%;
+    margin: auto;
+  }
+  .home-main .wrapper h2 {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #002D75;
+    font-size: 35px;
+  }
+  .home-main .wrapper .main-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .home-main .wrapper .main-list .layover {
+    position: relative;
+    width: calc(100% - 40px);
+    height: calc(100% - 44px);
+    max-width: calc(100% - 40px);
+    max-height: calc(100% - 44px);
+  }
+  .home-main .wrapper .main-list .layover .layover-icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .home-main .wrapper .main-list .layover:hover .layover-icon {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .home-main .wrapper .main-list .layover:hover .layover-icon:hover h3, .home-main .wrapper .main-list .layover:hover .layover-icon .icona {
+    display: block;
+  }
+  .home-main .wrapper .main-list h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .home-main .wrapper .main-list .icona {
+    width: 30px;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .home-main .wrapper .main-list .img-prodotto {
+    width: 500px;
+    margin: 20px;
+    transition: all 1s ease;
+  }
+  .home-main .wrapper .main-list .layover:hover .img-prodotto {
+    width: 520px;
+  }
+  .home-main .wrapper .main-list h3 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  footer {
+    font-family: "Roboto", sans-serif;
+  }
+  footer .footer-top {
+    margin: 100px 0 10px 0;
+  }
+  footer .footer-top .wrapper {
+    width: 1700px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+  }
+  footer .footer-top .wrapper .footer-left {
+    color: #a6a6a6;
+  }
+  footer .footer-top .wrapper .footer-left .footer-logo {
+    width: 400px;
+  }
+  footer .footer-top .wrapper .footer-left .info-molisana {
+    margin-top: 30px;
+  }
+  footer .footer-top .wrapper .footer-left .info-molisana p {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 5px 0;
+  }
+  footer .footer-top .wrapper .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .footer-top .wrapper .footer-right .box {
+    margin: 0 150px;
+  }
+  footer .footer-top .wrapper .footer-right .box h2 {
+    color: #808080;
+    font-size: 30px;
+  }
+  footer .footer-top .wrapper .footer-right .box .pastificio-list,
+  footer .footer-top .wrapper .footer-right .box .collezione-list,
+  footer .footer-top .wrapper .footer-right .box .prodotti-list {
+    list-style: none;
+  }
+  footer .footer-top .wrapper .footer-right .box .pastificio-list li,
+  footer .footer-top .wrapper .footer-right .box .collezione-list li,
+  footer .footer-top .wrapper .footer-right .box .prodotti-list li {
+    margin: 20px 0;
+  }
+  footer .footer-top .wrapper .footer-right .box .pastificio-list li a,
+  footer .footer-top .wrapper .footer-right .box .collezione-list li a,
+  footer .footer-top .wrapper .footer-right .box .prodotti-list li a {
+    text-decoration: none;
+    color: #a6a6a6;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  footer .footer-bottom {
+    height: 200px;
+    background-image: url("../img/footer-montagne-bottom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #single-product-main {
+    background-color: #B7DAE5;
+    padding: 50px;
+    position: relative;
+  }
+  #single-product-main h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #002D75;
+  }
+  #single-product-main .wrapper {
+    width: 1700px;
+    height: 100%;
+    margin: auto;
+  }
+  #single-product-main .wrapper .img-top {
+    text-align: center;
+  }
+  #single-product-main .wrapper .img-top img {
+    width: 70%;
+  }
+  #single-product-main .wrapper .img-btm {
+    text-align: center;
+  }
+  #single-product-main .wrapper .img-btm img {
+    width: 80%;
+  }
+  #single-product-main .wrapper .wrapper-description {
+    width: 1000px;
+    margin: auto;
+  }
+  #single-product-main .wrapper .wrapper-description .description {
+    color: #002D75;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  #single-product-main .prev {
+    height: 150px;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  #single-product-main .prev:hover i {
+    background-color: white;
+    color: #b3e5fc;
+  }
+  #single-product-main .next {
+    height: 150px;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  #single-product-main .next:hover i {
+    background-color: white;
+    color: #b3e5fc;
+  }
